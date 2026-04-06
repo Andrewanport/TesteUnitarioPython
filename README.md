@@ -7,6 +7,33 @@ Este projeto contém um exemplo simples de lógica Python (se trata de uma calcu
 - `calculadora_financeira.py`: módulo com fuções simples para servir de base aos testes.
 - `test_calculadora_financeira.py`: suíte de testes unitários.
 
+## Regras de Negócio Testadas
+
+As regras abaixo são validadas automaticamente na suíte `test_calculadora_financeira.py`:
+
+1. Cálculo de total com desconto:
+- Aplica desconto percentual corretamente.
+- Mantém o valor original quando o desconto é `0%`.
+- Rejeita percentual fora do intervalo permitido (`0` a `100`) com `ValueError`.
+- Rejeita valor de compra negativo com `ValueError`.
+
+2. Parcelamento de valor:
+- Calcula o valor da parcela com arredondamento para duas casas decimais.
+- Rejeita número de parcelas menor ou igual a zero com `ValueError`.
+- Rejeita valor total negativo com `ValueError`.
+
+3. Classificação de nota:
+- Classifica como `reprovado` para notas menores que `5`.
+- Classifica como `recuperacao` para notas entre `5` (inclusive) e `7` (exclusive).
+- Classifica como `aprovado` para notas maiores ou iguais a `7`.
+- Rejeita notas fora do intervalo `0` a `10` com `ValueError`.
+
+4. Identificação de cliente premium:
+- Classifica como premium quando `total_compras >= 5000`.
+- Classifica como premium quando `anos_cliente >= 5`.
+- Classifica como não premium quando nenhum dos critérios é atendido.
+- Rejeita valores negativos de entrada com `ValueError`.
+
 ## Como rodar os testes
 
 ### Opção 1: unittest
