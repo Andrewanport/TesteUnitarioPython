@@ -1,11 +1,11 @@
-# Testes Unitarios em Python
+# Testes Unitários em Python
 
-Este projeto contem um exemplo simples de logica Python com testes unitarios. A suite foi escrita com `unittest`, mas tambem pode ser executada com `pytest`.
+Este projeto contém um exemplo simples de lógica Python (se trata de uma calculadora) com testes unitários. A suíte foi escrita com `unittest`, mas também pode ser executada com `pytest`.
 
 ## Arquivos principais
 
-- `calculadora_financeira.py`: modulo com funcoes simples para servir de base aos testes.
-- `test_calculadora_financeira.py`: suite de testes unitarios.
+- `calculadora_financeira.py`: módulo com fuções simples para servir de base aos testes.
+- `test_calculadora_financeira.py`: suíte de testes unitários.
 
 ## Como rodar os testes
 
