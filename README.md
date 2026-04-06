@@ -9,7 +9,7 @@ Este projeto contem um exemplo simples de logica Python com testes unitarios. A 
 
 ## Como rodar os testes
 
-### Opcao 1: unittest
+### Opção 1: unittest
 
 No terminal, dentro da pasta do projeto, execute:
 
@@ -17,13 +17,7 @@ No terminal, dentro da pasta do projeto, execute:
 python -m unittest -v
 ```
 
-Se estiver usando a virtualenv criada neste projeto no Windows, voce tambem pode executar:
-
-```powershell
-.venv\Scripts\python.exe -m unittest -v
-```
-
-### Opcao 2: pytest
+### Opção 2: pytest
 
 Instale a dependencia de desenvolvimento:
 
@@ -35,12 +29,6 @@ Depois execute:
 
 ```powershell
 pytest -v
-```
-
-Ou, com a virtualenv do projeto no Windows:
-
-```powershell
-.venv\Scripts\python.exe -m pytest -v
 ```
 
 ## Resultado esperado
