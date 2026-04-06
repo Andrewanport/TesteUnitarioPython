@@ -34,8 +34,8 @@ class CalculosFinanceirosTests(unittest.TestCase):
     def test_classifica_notas_em_multiplos_cenarios(self):
         cenarios = [
             (4.9, "reprovado"),
-            (5.0, "recuperação"),
-            (6.8, "recuperação"),
+            (5.0, "recuperacao"),
+            (6.8, "recuperacao"),
             (7.0, "aprovado"),
             (9.5, "aprovado"),
         ]
