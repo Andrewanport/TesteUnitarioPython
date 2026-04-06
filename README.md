@@ -46,5 +46,8 @@ Ou, com a virtualenv do projeto no Windows:
 ## Resultado esperado
 
 Com `unittest`, o comando deve listar os testes executados e finalizar com `OK`.
+<img width="1860" height="868" alt="image" src="https://github.com/user-attachments/assets/8ba6d1c0-9867-4ac2-a389-816b63cd933d" />
+
 
 Com `pytest`, o comando deve mostrar a coleta dos testes e finalizar com algo como `11 passed`.
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/dee5cdf5-2ebb-4605-b5df-390ff2d9d405" />
