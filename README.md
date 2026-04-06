@@ -4,7 +4,7 @@ Este projeto contém um exemplo simples de lógica Python (se trata de uma calcu
 
 ## Arquivos principais
 
-- `calculadora_financeira.py`: módulo com fuções simples para servir de base aos testes.
+- `calculadora_financeira.py`: módulo com funções simples para servir de base aos testes.
 - `test_calculadora_financeira.py`: suíte de testes unitários.
 
 ## Regras de Negócio Testadas
@@ -58,11 +58,30 @@ Depois execute:
 pytest -v
 ```
 
+### Opcao 3: pytest com cobertura
+
+Para gerar cobertura de linhas e ramos (branch):
+
+```powershell
+pytest --cov=calculadora_financeira --cov-branch --cov-report=term-missing -v
+```
+
 ## Resultado esperado
 
 Com `unittest`, o comando deve listar os testes executados e finalizar com `OK`.
 <img width="1860" height="868" alt="image" src="https://github.com/user-attachments/assets/8ba6d1c0-9867-4ac2-a389-816b63cd933d" />
 
 
-Com `pytest`, o comando deve mostrar a coleta dos testes e finalizar com algo como `11 passed`.
+Com `pytest`, o comando deve mostrar a coleta dos testes e finalizar com algo como `15 passed`.
 <img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/dee5cdf5-2ebb-4605-b5df-390ff2d9d405" />
+
+## Cobertura de teste
+
+A suite valida os fluxos de sucesso e falha das regras mais criticas do modulo de servico `calculadora_financeira.py`.
+
+Resultado atual esperado com cobertura habilitada:
+
+- Cobertura de linhas: `100%`
+- Cobertura de ramos (branch): `100%`
+- Execucao da suite: `15 passed, 5 subtests passed`
+- Relatorio detalhado exportado em `coverage.xml`
